@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  agent-pool: 'github-with-azure-pipelines'
 
 steps:
 - task: NodeTool@0
