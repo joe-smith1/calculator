@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  agent-pool: 'github-with-azure-pipelines'
+  name: 'github-with-azure-pipelines'
 
 steps:
 - task: NodeTool@0
