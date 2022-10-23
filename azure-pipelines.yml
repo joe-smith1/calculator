@@ -9,20 +9,9 @@ trigger:
 pool:
   name: 'github-with-azure-pipelines'
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
-
 - task: CmdLine@2
   inputs:
     script: |
       npm install
       npm test
   displayName: 'npm install and test'
-
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    customCommand: 'test'
